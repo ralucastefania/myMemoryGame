@@ -1,0 +1,75 @@
+.tile {
+    width: 1px;
+    height: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: gray;
+    border-width: 2px;
+    /* background-image: url("images/Puffin.png"); */
+    background-size: 100px;
+    background-color: white;
+    border-width: 2px;
+    box-shadow: 2px 2px #888888
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    width: 1000px;
+    background-color: rgb(255, 255, 182);
+    border-radius: 10px;
+    padding: 40px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    float: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#winMessage {
+  vertical-align: middle;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: turquoise;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 10px;
+  padding: 40px;
+  z-index: 10;
+  font-size: xx-large;
+  color: black;
+  visibility: hidden;
+  box-shadow: 5px 5px #888888
+}
+
+#statistics {
+    font-size: large;
+}
+
+#playButton{
+  background-color:red;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: x-large;
+  margin: 4px 2px;
+  opacity: 0.8;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#playButton:hover {
+  opacity: 1;
+}
